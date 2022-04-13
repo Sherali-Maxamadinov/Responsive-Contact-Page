@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.contact-page {
+  color: #fff;
+  width: 100vw;
+  height: 100vh;
+  background: url("./Components/Assets/Images/background.webp");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.contact-page .contact {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.contact-page .contact .header {
+  text-align: center;
+  width: 80%;
+  max-width: 800px;
+}
+.contact-page .contact .body {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0;
+}
+.contact-page .contact .body .details {
+  width: 50%;
+}
+.contact-page .contact .body .details .detail {
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+}
+.contact-page .contact .body .details .detail .icon {
+  height: 40px;
+  width: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.contact-page .contact .body .details .detail .text {
+  margin-left: 0.5rem;
+  width: 300px;
+}
+.contact-page .contact .body .details .detail h3 {
+  color: rgb(0, 128, 255);
+}
+.contact-page .contact .body .form {
+  color: #000;
+  background-color: #fff;
+  width: 50%;
+  padding: 2rem;
+}
+.contact-page .contact .body .form input {
+  width: 100%;
+  margin: 1rem 0;
+  border: none;
+  border-bottom: 2px solid rgb(84, 84, 84);
+  outline: none;
+}
+.contact-page .contact .body .form textarea {
+  width: 100%;
+  margin: 0.4rem 0;
+  border: none;
+  border-bottom: 2px solid rgb(84, 84, 84);
+  outline: none;
+}
+.contact-page .contact .body .form button {
+  padding: 0.6rem 1.5rem;
+  cursor: pointer;
+  color: #fff;
+  background-color: rgb(0, 128, 255);
+  border: none;
+}
+
+@media (min-width: 0) and (max-width: 800px) {
+  .contact-page {
+    height: auto;
+  }
+  .contact-page .contact {
+    height: auto;
+  }
+  .contact-page .contact .header h1 {
+    margin: 1rem 0;
+  }
+  .contact-page .contact .body .details {
+    width: 80%;
+  }
+  .contact-page .contact .body .form {
+    width: 80%;
+  }
+}
